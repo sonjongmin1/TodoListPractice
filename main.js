@@ -112,6 +112,13 @@ function deleteTask(id){
             break;
         }
     }
+
+    for(let i = 0; i < filterList.length; i++) {
+        if (filterList[i].id == id) {
+            filterList.splice(id, 1);
+            break;
+        }
+    }
     render();
 }
 
