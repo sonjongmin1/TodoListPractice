@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 전체를 감싸는 div태그 -->
+    <div class="container">
+      <h1>Todo List</h1>
+      <section class="input-area">
+        <input type="text" id="task-input" />
+        <button id="add-button">+</button>
+      </section>
+
+      <section class="task-area">
+        <!-- tab이 들어갈 div tag -->
+        <div class="task-tabs" id="task-tabs-id">
+          <div id="under-line"></div>
+          <div id="all">All</div>
+          <div id="ongoing">Ongoing</div>
+          <div id="done">Done</div>
+        </div>
+        <!-- task가 들어가 div tag -->
+        <div id="task-board"></div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
